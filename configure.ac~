@@ -3,8 +3,8 @@
 # Process this file with autoconf to produce a configure script.
 # $Id$
 
-AC_PREREQ([2.70])
-AC_INIT([libhpfeeds],[0.1.0],[tillmann.werner@gmx.de])
+AC_PREREQ(2.59)
+AC_INIT([libhpfeeds], [0.1.0], [tillmann.werner@gmx.de])
 AM_INIT_AUTOMAKE([libhpfeeds], [0.1.0])
 AC_REVISION([$Id$])
 
@@ -20,7 +20,7 @@ AC_C_BIGENDIAN
 # Checks for programs.
 AC_PROG_CC
 AC_PROG_MAKE_SET
-LT_INIT
+AC_PROG_LIBTOOL
 
 AC_CHECK_HEADERS([arpa/inet.h sys/types.h])
 
